@@ -1,5 +1,5 @@
 from random import randint
-
+import numpy as np
 
 # matriz=[[1,2,3],
 #         [4,5,6],
@@ -66,3 +66,17 @@ def multiplicarMatriz(A,B):
     return matriz
 
 print (multiplicarMatriz(A,B))
+
+def mostrarMatriz(matriz):
+    print(matriz.shape)
+    print(type(matriz))
+    print(matriz)
+
+A = np.array([[2,31,5],[5,2,2],[3,5,5]])
+B = np.array([[2,31,5],[5,2,2],[3,5,5]])
+print(A,B)
+print(A+B)
+print(A@B)
+print(np.matmul(A,B))
+
+###programa completo de un menú (con operaciones de tipo for)
